@@ -19,7 +19,7 @@
                     </li>
                     <li class="nav-item me-4">
                         <a class="nav-link"
-                            href="blog.html">Journey</a>
+                            href="#journey">Journey</a>
                     </li>
                     <li class="nav-item me-4">
                         <a class="nav-link"
@@ -27,15 +27,15 @@
                     </li>
                     <li class="nav-item me-4">
                         <a class="nav-link"
-                            href="contact.html">Product</a>
+                            href="#product">Product</a>
                     </li>
                     <li class="nav-item me-4">
                         <a class="nav-link"
-                            href="blog.html">Team</a>
+                            href="#team">Team</a>
                     </li>
                     <li class="nav-item me-4">
                         <a class="nav-link"
-                            href="blog.html">Contact</a>
+                            href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>

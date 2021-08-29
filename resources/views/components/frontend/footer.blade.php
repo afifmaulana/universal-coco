@@ -1,12 +1,12 @@
-<section>
+<section id="contact">
     <div class="footer-black py-5">
         <div class="container">
-            <div class="row text-center mb-4">
+            <div class="row text-center mb-4" data-aos="fade-up">
                 <h2 class="text-30 fw-bold">Questions?</h2>
                 <h5 class="text-20">Let’s Get In Touch</h5>
             </div>
-            <div class="col-md-5">
-                <div class="col-sm-12 col-md-3 mb-3" data-aos="fade">
+            <div class="col-md-5" data-aos="fade-up">
+                <div class="col-sm-12 col-md-3 mb-3">
                     <img src="{{ asset('assets/images/logo-uc-white.png') }}" class="img-fluid my-auto h-auto w-100"
                         alt="">
                 </div>
