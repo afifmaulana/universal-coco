@@ -8,11 +8,9 @@
     <link rel="stylesheet" href="{{ asset('assets/styles/responsive.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/styles/all.min.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/styles/simple-line-icons.css') }}">
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
+    {{-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css"> --}}
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="icon" href="{{ asset('assets/images/favicon.ico') }}">
-    <!-- Add the slick-theme.css if you want default styling -->
     <!-- Add the slick-theme.css if you want default styling -->
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <!-- Add the slick-theme.css if you want default styling -->

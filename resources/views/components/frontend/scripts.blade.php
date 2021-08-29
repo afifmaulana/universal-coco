@@ -6,12 +6,10 @@
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/custom.js"></script>
 <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-<script>
-    $('.multiple-items').slick({
-        infinite: true,
-        slidesToShow: 3,
-        slidesToScroll: 3
+{{-- <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> --}}
+<script type="text/javascript">
+    $(document).ready(function() {
+        console.log("carousel...")
+        $('.carousel').carousel();
     });
-    $('.carousel').carousel()
 </script>
