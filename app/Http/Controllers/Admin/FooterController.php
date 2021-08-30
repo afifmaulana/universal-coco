@@ -32,6 +32,7 @@ class FooterController extends Controller
         $footer->subtitle = $request->subtitle;
         $footer->company_name = $request->company_name;
         $footer->description = $request->description;
+        $footer->text_copyright = $request->text_copyright;
         $image = $request->file('image');
         if ($image != '') {
             $img = (public_path('uploads/footer/').$footer->image);

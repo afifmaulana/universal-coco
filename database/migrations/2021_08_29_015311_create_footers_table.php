@@ -20,6 +20,7 @@ class CreateFootersTable extends Migration
             $table->string('company_name')->nullable();
             $table->text('description')->nullable();
             $table->string('image')->nullable();
+            $table->string('text_copyright')->nullable();
             $table->timestamps();
         });
     }

@@ -45,6 +45,11 @@
                             @endif
                             <img src="{{asset('uploads/footer/'.$data->image)}}" width="100" height="100" class="mb-2">
                         </div>
+                        <div class="form-group">
+                            <label for="text_copyright">Text Copyright</label>
+                            <input rows="5" type="text" class="form-control" id="text_copyright" name="text_copyright"
+                                required placeholder="Enter text_copyright" value="{{ old('text_copyright') ?? ($data ? $data->text_copyright : '') }}"/>
+                        </div>
                     </div>
                     <div class="card-footer">
                         <button type="submit" class="btn btn-primary">Simpan</button>

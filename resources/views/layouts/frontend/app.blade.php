@@ -20,11 +20,11 @@
                 <div class="col-md-8 pt-5 flex-grow-1 d-flex" style="margin-bottom: -6rem">
                     <div class="pt-5" data-aos="fade">
                         <div class="pt-5 px-md-5">
-                            <h6 class="title-h6">Supplying across the globe</h6>
-                            <h2 class="title-h2">The Leading Supplier<br />of Coconut Product</h2>
+                            <h6 class="title-h6">{!! $banner->title !!}</h6>
+                            <h2 class="title-h2">{!! $banner->subtitle !!}</h2>
                         </div>
                         <div class="px-md-5">
-                            <a href="" class="btn btn-outline-light">Learn More</a>
+                            <a href="{!! $banner->url_button !!}" class="btn btn-outline-light">{!! $banner->text_button !!}</a>
                         </div>
                     </div>
                 </div>
@@ -34,55 +34,22 @@
 
     <section id="aboutus" class="mb-5 mb-md-0">
         <div class="container-fluid p-3 p-md-5">
-            {{-- <div class="py-5" data-aos="fade-up">
-                <h2 class="title-primary-50 text-center mb-3">
-                    About Us
-                </h2>
-                <p class="subtitle text-center px-240">
-                    Didirikan pada tahun 2017 dengan dukungan program pemberdayaan WWF, ALKO bertujuan untuk
-                    memberikan pengetahuan dan teknologi agribisnis kepada para petani kopi di kawasan Gunung Kerinci, dalam
-                    rangka meningkatkan kapasitas produksi, kualitas dan nilai produk mereka, dan untuk memperluas pasar
-                    global (Ekspor), Serta Pelestarian alam, pemberdayaan masyarakat.
-                </p>
-            </div> --}}
             <div class="px-md-5">
                 <div class="d-none d-md-block mb-5">
-                    {{-- <div class="row mb-5">
-                        <div class="col-sm-12 col-md-6 mb-3 mb-md-0 photos" data-aos="fade-down">
-                            <a href="{{ asset('assets/images/hero/home-hero-1629380507.png') }}" data-lightbox="photos">
-                                <img src="{{ asset('assets/images/hero/home-hero-1629380507.png') }}"
-                                    class="img-fluid rounded float-start zoom" alt="">
-                            </a>
-                        </div>
-                        <div class="col-sm-12 col-md-6 my-auto" data-aos="fade-up">
-                            <h2 class="text-black-35 mb-3">
-                                Menjadi petani yang handal dan profesional
-                            </h2>
-                            <p class="subtitle">
-                                Perkumpulan Kopi Alam Korintji Memberi pendampingian kepada petani kopi agar dapat
-                                meningkatkan kapasitas petani dan masyarakat dalam menjadikan tanaman Kebun Kopi
-                                sebagai pendapatan Andalan dan sebagai produk utama penyangga ekonomi masyarakat Kerinci.
-                            </p>
-                        </div>
-                    </div> --}}
                     <div class="row mb-5">
                         <div class="col-sm-12 col-md-6 my-auto" data-aos="fade-up">
 
                             <h2 class="text-black-35 mb-3">
                                 About Us
                             </h2>
-                            <p class="text-18">We process more than 1,500 hectares of coconut plantations, spread across
-                                several islands in Eastern Indonesia.</p>
+                            <p class="text-18">{!! $aboutus->title !!}</p>
                             <p class="subtitle">
-                                In the beginning, our company was engaged in manufacturing where we processed coconut
-                                derivative products, namely coconut shells into coconut shell charcoal. And after that
-                                our company expanded and expanded into coconut plantations, to process more derivative
-                                products.
+                                {!! $aboutus->description !!}
                             </p>
                         </div>
                         <div class="col-sm-12 col-md-6 mb-3 mb-md-0 photos px-md-5" data-aos="fade-down">
-                            <a href="{{ asset('assets/images/about-us.png') }}" data-lightbox="photos">
-                                <img src="{{ asset('assets/images/about-us.png') }}"
+                            <a href="{{ asset('uploads/about-us/'. $aboutus->image) }}" data-lightbox="photos">
+                                <img src="{{ asset('uploads/about-us/'. $aboutus->image) }}"
                                     class="img-fluid rounded float-start zoom" alt="">
                             </a>
                         </div>
@@ -94,22 +61,18 @@
                             About Us
                         </h2>
                         <div class="col-sm-12 col-md-6 mb-3 mb-md-0 photos" data-aos="fade-up">
-                            <a href="{{ asset('assets/images/about-us.png') }}" data-lightbox="photos">
-                                <img src="{{ asset('assets/images/about-us.png') }}"
+                            <a href="{{ asset('uploads/about-us/'. $aboutus->image) }}" data-lightbox="photos">
+                                <img src="{{ asset('uploads/about-us/'. $aboutus->image) }}"
                                     class="img-fluid rounded float-start zoom" alt="">
                             </a>
                         </div>
                         <div class="col-sm-12 col-md-6 my-auto" data-aos="fade-up">
 
                             <h2 class="text-black-35 mb-3">
-                                We process more than 1,500 hectares of coconut plantations, spread across
-                                several islands in Eastern Indonesia.
+                                {!! $aboutus->title !!}
                             </h2>
                             <p class="subtitle">
-                                In the beginning, our company was engaged in manufacturing where we
-                                processed coconut derivative products, namely coconut shells into
-                                coconut shell charcoal. And after that our company expanded and
-                                expanded into coconut plantations, to process more derivative products.
+                                {!! $aboutus->description !!}
                             </p>
                         </div>
                     </div>

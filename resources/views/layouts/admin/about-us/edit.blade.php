@@ -27,7 +27,7 @@
                                 <p><b>{{ $errors->first('image') }}</b></p>
                             </span>
                             @endif
-                            <img src="{{asset('uploads/about-us/'.$data->image)}}" class="img-fluid mb-2">
+                            <img src="{{asset('uploads/about-us/'.$data->image)}}" height="100" width="100" class="img-fluid mb-2">
                         </div>
                         <div class="form-group">
                             <label for="">Description</label>

@@ -23,15 +23,29 @@
             </li>
 
             <li class="nav-item">
-                <a href="{{ route('about-us.edit') }}">
+                <a href="{{ route('title-section.index') }}">
                     <i class="la la-edit" style="color: #338e4f"></i>
+                    <p>Title Section</p>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a href="{{ route('menu.index') }}">
+                    <i class="la la-list-alt" style="color: #338e4f"></i>
+                    <p>Menu</p>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a href="{{ route('about-us.edit') }}">
+                    <i class="la la-quote-left" style="color: #338e4f"></i>
                     <p>About Us</p>
                 </a>
             </li>
 
             <li class="nav-item">
                 <a href="{{ route('banner.edit') }}">
-                    <i class="la la-edit" style="color: #338e4f"></i>
+                    <i class="la la-picture-o" style="color: #338e4f"></i>
                     <p>Banner</p>
                 </a>
             </li>
@@ -59,7 +73,7 @@
 
             <li class="nav-item has-submenu">
                 <a class="nav-link" href="#">
-                    <i class="la la-pagelines" style="color: #338e4f"></i>
+                    <i class="la la-cubes" style="color: #338e4f"></i>
                     <p>Our Products</p>
                     <span class="la la-angle-down"></span>
                 </a>
@@ -79,7 +93,7 @@
 
             <li class="nav-item">
                 <a href="{{ route('team.index') }}">
-                    <i class="la la-suitcase" style="color: #338e4f"></i>
+                    <i class="la la-sitemap" style="color: #338e4f"></i>
                     <p>Our Teams</p>
                 </a>
             </li>

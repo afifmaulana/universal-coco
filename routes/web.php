@@ -5,11 +5,14 @@ use App\Http\Controllers\Admin\BannerController;
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\FeatureController;
 use App\Http\Controllers\Admin\FooterController;
+use App\Http\Controllers\Admin\MenuController;
 use App\Http\Controllers\Admin\ProductController;
 use App\Http\Controllers\Admin\ProfileController;
 use App\Http\Controllers\Admin\SettingController;
 use App\Http\Controllers\Admin\TeamController;
+use App\Http\Controllers\Admin\TitleSectionController;
 use App\Http\Controllers\Auth\LoginController;
+use App\Http\Controllers\Frontend\FrontendController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -23,13 +26,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('layouts.frontend.app');
-});
+// Route::get('/', function () {
+//     return view('layouts.frontend.app');
+// });
 
 Route::get('/admin', function () {
     return view('layouts.admin.app');
 });
+
+Route::get('/', [FrontendController::class, 'index']);
 
 Route::prefix('admin')->group(function () {
     Route::get('/login', [LoginController::class, 'showLoginForm'])->name('admin.login');
@@ -88,6 +93,18 @@ Route::prefix('admin')->group(function () {
     Route::prefix('banner')->group(function () {
         Route::get('edit', [BannerController::class, 'edit'])->name('banner.edit');
         Route::patch('edit', [BannerController::class, 'update'])->name('banner.update');
+    });
+
+    Route::prefix('title-section')->group(function () {
+        Route::get('/', [TitleSectionController::class, 'index'])->name('title-section.index');
+        Route::get('/{id}/edit', [TitleSectionController::class, 'edit'])->name('title-section.edit');
+        Route::patch('/{id}/edit', [TitleSectionController::class, 'update'])->name('title-section.update');
+    });
+
+    Route::prefix('menu')->group(function () {
+        Route::get('/', [MenuController::class, 'index'])->name('menu.index');
+        Route::get('/{id}/edit', [MenuController::class, 'edit'])->name('menu.edit');
+        Route::patch('/{id}/edit', [MenuController::class, 'update'])->name('menu.update');
     });
 });
 
