@@ -14,12 +14,12 @@
                     @csrf
                     <div class="card-body">
                         <div class="form-group">
-                            <label for="title">Nama</label>
+                            <label for="title">Title</label>
                             <input type="text" class="form-control" id="title" name="title" required
                                 placeholder="Enter title" value="{{ old('title') ?? ($data ? $data->title : '') }}">
                         </div>
                         <div class="form-group">
-                            <label for="">Gambar</label>
+                            <label for="">Image</label>
                             <input type="file" class="form-control {{$errors->has('image')?'is-invalid':''}}"
                                 name="image" id="input-image">
                             @if ($errors->has('image'))
@@ -30,7 +30,7 @@
                             <img src="{{asset('uploads/about-us/'.$data->image)}}" class="img-fluid mb-2">
                         </div>
                         <div class="form-group">
-                            <label for="">Deskripsi</label>
+                            <label for="">Description</label>
                             <textarea id="summernote" class="form-control {{$errors->has('description')?'is-invalid':''}}" name="description" id="input-deskirpsi">{{ $data->description }}</textarea>
                             @if ($errors->has('description'))
                                 <span class="invalid-feedback" role="alert">
