@@ -5,7 +5,7 @@
                 <img src="{{ asset('assets/images/favicon.ico') }}">
             </div>
             <div class="info">
-                <a class="" data-toggle="collapse" href="#collapseExample" aria-expanded="true">
+                <a class="___class_+?5___" data-toggle="collapse" href="#collapseExample" aria-expanded="true">
                     <span>
                         {{ Auth::user()->name }}
                         <span class="user-level">Administrator</span>
