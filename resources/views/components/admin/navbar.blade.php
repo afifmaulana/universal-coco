@@ -19,7 +19,7 @@
                     <a class="dropdown-toggle profile-pic" data-toggle="dropdown" href="#" aria-expanded="false">
                         {{-- <img src="{{ asset('uploads/user/'. Auth::user()->image) }}"
                             alt="user-img" width="36" class="img-circle"> --}}
-                        <span style="color: white">Admin</span> </a>
+                        <span style="color: white">{{ Auth::user()->name }}</span> </a>
                     <ul class="dropdown-menu dropdown-user">
                         <li>
                             <div class="user-box">
@@ -27,7 +27,7 @@
                                     <img src="{{ asset('uploads/user/' . Auth::user()->image) }}" alt="user">
                                 </div> --}}
                                 <div class="u-text">
-                                    <h4>Admin</h4>
+                                    <h4>{{ Auth::user()->name }}</h4>
                                     <p class="text-muted">admin@gmail.com</p>
                                     {{-- <a href="{{ route('profile.edit') }}"
                                         class="btn btn-rounded btn-danger btn-sm">View Profile</a> --}}
@@ -35,10 +35,10 @@
                             </div>
                         </li>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href=""><i class="ti-user"></i> My
+                        <a class="dropdown-item" href="{{ route('profile.edit') }}"><i class="ti-user"></i> My
                             Profile</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href=""><i class="fa fa-power-off"></i>
+                        <a class="dropdown-item" href="{{ route('logout') }}"><i class="fa fa-power-off"></i>
                             Logout</a>
                     </ul>
                     <!-- /.dropdown-user -->

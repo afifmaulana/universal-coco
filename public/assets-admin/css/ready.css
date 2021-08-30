@@ -6457,13 +6457,13 @@ body {
 }
 
 .btn-primary {
-    background: #c91c1c !important;
+    background: #22bb50 !important;
 }
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary:disabled {
-    background: #ff1313 !important;
-    border-color: #ff1313 !important;
+    background: #145c2a !important;
+    border-color: #145c2a !important;
 }
 
 .btn-info {

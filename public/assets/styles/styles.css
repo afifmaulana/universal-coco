@@ -993,8 +993,6 @@ html {
 }
 .copyright-style {
     background-color: #282828;
-    display: flex;
-    align-items: center;
     padding: 10px 100px;
 }
 .btn-outline-black {
