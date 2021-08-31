@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Login Admin Universal Coco</title>
+    <title>Login Admin</title>
     <link rel="stylesheet" href="{{ asset('assets-admin/css/bootstrap.min.css') }}">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
@@ -192,7 +192,7 @@
                 <div class="col-lg-6 px-md-5">
                     <div class="card1 pb-5 px-md-5">
                         <div class="row px-5 text-center mt-4 mb-5">
-                            <h2 style="color: #338e4f; font-weight: 800">Selamat Datang Admin Universal Coco</h2>
+                            <h2 style="color: #338e4f; font-weight: 800">Selamat Datang Admin</h2>
                             <div class="row px-3 justify-content-center mt-4 mb-5">
                                 <svg id="a5c16198-98a1-478b-8909-43624583dcf2" data-name="Layer 1"
                                     xmlns="http://www.w3.org/2000/svg" width="293" height="151.73152"
