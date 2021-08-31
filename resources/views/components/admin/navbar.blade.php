@@ -38,7 +38,7 @@
                         <a class="dropdown-item" href="{{ route('profile.edit') }}"><i class="ti-user"></i> My
                             Profile</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="{{ route('logout') }}"><i class="fa fa-power-off"></i>
+                        <a class="dropdown-item" href="{{ route('admin.logout') }}"><i class="fa fa-power-off"></i>
                             Logout</a>
                     </ul>
                     <!-- /.dropdown-user -->
