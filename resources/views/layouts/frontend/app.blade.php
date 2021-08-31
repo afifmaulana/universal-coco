@@ -19,11 +19,11 @@
             <div class="row h-100 pt-md-5 d-flex flex-column">
                 <div class="col-md-8 pt-5 flex-grow-1 d-flex" style="margin-bottom: -6rem">
                     <div class="pt-5" data-aos="fade">
-                        <div class="pt-5 px-md-5">
+                        <div class="px-md-5">
                             <h6 class="title-h6">{!! $banner->title !!}</h6>
                             <h2 class="title-h2">{!! $banner->subtitle !!}</h2>
                         </div>
-                        <div class="px-md-5">
+                        <div class="px-md-5 mb-md-5">
                             <a href="{!! $banner->url_button !!}" class="btn btn-outline-light">{!! $banner->text_button !!}</a>
                         </div>
                     </div>

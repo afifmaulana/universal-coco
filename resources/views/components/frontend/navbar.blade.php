@@ -3,7 +3,7 @@
         class="navbar navbar-expand-lg navbar-light fixed-top px-md-5">
         <div class="container-fluid main_menu ps-3 px-md-5">
             <a class="navbar-brand" href="index.html">
-                    <img id="brand-logo" src="{{ asset('assets/images/logo-uc-green.png') }}"
+                    <img id="brand-logo" src="{{ asset('uploads/setting/'. $config['setting']['logo']) }}"
                     style="height: 50px; width: auto; transition: all 0.25s ease;">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
