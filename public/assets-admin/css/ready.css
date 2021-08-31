@@ -2397,7 +2397,7 @@ body {
     font-weight: 700;
 }
 .sidebar .nav .nav-item.active a:before {
-    background: #e3180e;
+    background: #338e4f;
     opacity: 1 !important;
     position: absolute;
     z-index: 1;
@@ -2408,7 +2408,7 @@ body {
     top: 0;
 }
 .sidebar .nav .nav-item.active:hover a:before {
-    background: #e3180e;
+    background: #338e4f;
     opacity: 1 !important;
     position: absolute;
     z-index: 1;
@@ -2419,7 +2419,7 @@ body {
     top: 0;
 }
 .sidebar .nav .nav-item.active a i {
-    color: #4d7cfe;
+    color: #338e4f;
 }
 .sidebar .nav .nav-item a {
     display: flex;
@@ -2438,7 +2438,7 @@ body {
     background: #fbfbfb;
 }
 .sidebar .nav .nav-item:hover a:before {
-    background: #1d7af3;
+    background: #338e4f;
     opacity: 0.7;
     position: absolute;
     z-index: 1;

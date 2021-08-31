@@ -19,7 +19,6 @@ class Visitor
     public function handle(Request $request, Closure $next)
     {
         $agent = new Agent();
-        dd($agent);
         $device = $agent->device();
         $browser = $agent->browser();
 

@@ -19,7 +19,7 @@
                                     <div class="numbers">
                                         <p class="text-bold text-muted">Pengunjung</p>
                                         <p class="text-bold text-muted">Hari Ini</p>
-                                        <h2 class="card-title"><span class="text-primary text-bold">11</span>
+                                        <h2 class="card-title"><span class="text-primary text-bold">{{ $today }}</span>
                                         </h2>
                                     </div>
                                 </div>
@@ -37,7 +37,7 @@
                             <div class="row">
                                 <div class="col-5 border rounded">
                                     <div class="icon-big text-center">
-                                        <img src="{{ asset('assets-admin/img/people.png') }}" height="100" width="100"
+                                        <img src="{{ asset('assets-admin/img/month.png') }}" height="100" width="100"
                                             alt="">
                                     </div>
                                 </div>
@@ -46,7 +46,7 @@
                                         <p class="text-bold text-muted">Pengunjung</p>
                                         <p class="text-bold text-muted">Bulan Ini</p>
                                         <h2 class="card-title"><span
-                                                class="text-primary text-bold">111</span>
+                                                class="text-primary text-bold">{{ $current_month }}</span>
                                         </h2>
                                     </div>
                                 </div>
@@ -64,7 +64,7 @@
                             <div class="row">
                                 <div class="col-5 border rounded">
                                     <div class="icon-big text-center">
-                                        <img src="{{ asset('assets-admin/img/people.png') }}" height="100" width="100"
+                                        <img src="{{ asset('assets-admin/img/total.png') }}" height="100" width="100"
                                             alt="">
                                     </div>
                                 </div>
@@ -72,7 +72,7 @@
                                     <div class="numbers">
                                         <p class="text-bold text-muted">Pengunjung</p>
                                         <p class="text-bold text-muted">Total semua</p>
-                                        <h2 class="card-title"><span class="text-primary text-bold">1111</span>
+                                        <h2 class="card-title"><span class="text-primary text-bold">{{ $total }}</span>
                                         </h2>
                                     </div>
                                 </div>

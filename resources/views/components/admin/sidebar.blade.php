@@ -15,35 +15,35 @@
             </div>
         </div>
         <ul class="nav">
-            <li class="nav-item">
+            <li class="nav-item {{ request()->routeIs(['dashboard.index']) ? 'active' : '' }}">
                 <a href="{{ route('dashboard.index') }}">
                     <i class="la la-dashboard" style="color: #338e4f"></i>
                     <p>Dashboard</p>
                 </a>
             </li>
 
-            <li class="nav-item">
+            <li class="nav-item {{ request()->routeIs(['title-section.index']) ? 'active' : '' }}">
                 <a href="{{ route('title-section.index') }}">
                     <i class="la la-edit" style="color: #338e4f"></i>
                     <p>Title Section</p>
                 </a>
             </li>
 
-            <li class="nav-item">
+            <li class="nav-item {{ request()->routeIs(['menu.index']) ? 'active' : '' }}">
                 <a href="{{ route('menu.index') }}">
                     <i class="la la-list-alt" style="color: #338e4f"></i>
                     <p>Menu</p>
                 </a>
             </li>
 
-            <li class="nav-item">
+            <li class="nav-item {{ request()->routeIs(['about-us.edit']) ? 'active' : '' }}">
                 <a href="{{ route('about-us.edit') }}">
                     <i class="la la-quote-left" style="color: #338e4f"></i>
                     <p>About Us</p>
                 </a>
             </li>
 
-            <li class="nav-item">
+            <li class="nav-item {{ request()->routeIs(['banner.edit']) ? 'active' : '' }}">
                 <a href="{{ route('banner.edit') }}">
                     <i class="la la-picture-o" style="color: #338e4f"></i>
                     <p>Banner</p>
@@ -51,7 +51,7 @@
             </li>
 
 
-            <li class="nav-item has-submenu">
+            <li class="nav-item has-submenu {{ request()->routeIs(['feature.create', 'feature.index']) ? 'active' : '' }}">
                 <a class="nav-link" href="#">
                     <i class="la la-pagelines" style="color: #338e4f"></i>
                     <p>Features</p>
@@ -71,7 +71,7 @@
                 </ul>
             </li>
 
-            <li class="nav-item has-submenu">
+            <li class="nav-item has-submenu {{ request()->routeIs(['product.create', 'product.index']) ? 'active' : '' }}">
                 <a class="nav-link" href="#">
                     <i class="la la-cubes" style="color: #338e4f"></i>
                     <p>Our Products</p>
@@ -91,28 +91,28 @@
                 </ul>
             </li>
 
-            <li class="nav-item">
+            <li class="nav-item {{ request()->routeIs(['team.index']) ? 'active' : '' }}">
                 <a href="{{ route('team.index') }}">
                     <i class="la la-sitemap" style="color: #338e4f"></i>
                     <p>Our Teams</p>
                 </a>
             </li>
 
-            <li class="nav-item">
+            <li class="nav-item {{ request()->routeIs(['setting.edit']) ? 'active' : '' }}">
                 <a href="{{ route('setting.edit') }}">
                     <i class="la la-gear" style="color: #338e4f"></i>
                     <p>Setting</p>
                 </a>
             </li>
 
-            <li class="nav-item">
+            <li class="nav-item {{ request()->routeIs(['footer.edit']) ? 'active' : '' }}">
                 <a href="{{ route('footer.edit') }}">
                     <i class="la la-commenting" style="color: #338e4f"></i>
                     <p>Footer</p>
                 </a>
             </li>
 
-            <li class="nav-item">
+            <li class="nav-item {{ request()->routeIs(['profile.edit']) ? 'active' : '' }}">
                 <a href="{{ route('profile.edit') }}">
                     <i class="la la-user" style="color: #338e4f"></i>
                     <p>Profile</p>
