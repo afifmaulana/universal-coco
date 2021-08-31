@@ -54,7 +54,7 @@ class AboutUsController extends Controller
             $aboutus->image = $filename;
         }
         $aboutus->update();
-        Alert::success('About Us ' . $aboutus->title, 'Berhasil Diubah');
+        Alert::success('Data Berhasil Diubah');
         return redirect()->back();
     }
 }

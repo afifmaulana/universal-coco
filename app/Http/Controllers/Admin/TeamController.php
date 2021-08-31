@@ -114,6 +114,6 @@ class TeamController extends Controller
         $data = Team::where('id', $id)->first();
         $data->delete();
         Alert::success('Data ' . $data->name, 'Berhasil Dihapus');
-        return redirect()->route('teams.index');
+        return redirect()->route('team.index');
     }
 }

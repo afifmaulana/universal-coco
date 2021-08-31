@@ -102,7 +102,7 @@ class ProductController extends Controller
         $data = Product::where('id', $id)->first();
         $data->delete();
         Alert::success('Data ' . $data->title, 'Berhasil Dihapus');
-        return redirect()->route('products.index');
+        return redirect()->route('product.index');
     }
 }
 

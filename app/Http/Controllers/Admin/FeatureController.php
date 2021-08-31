@@ -53,7 +53,7 @@ class FeatureController extends Controller
         $feature->description = $request->description;
         $feature->image = $filename;
         $feature->save();
-        Alert::success('Data Choose Us', 'Berhasil Ditambahkan');
+        Alert::success('Data Feature Berhasil Ditambahkan');
         return redirect()->route('feature.index');
     }
 
@@ -102,6 +102,6 @@ class FeatureController extends Controller
         $data = Feature::where('id', $id)->first();
         $data->delete();
         Alert::success('Data ' . $data->title, 'Berhasil Dihapus');
-        return redirect()->route('features.index');
+        return redirect()->route('feature.index');
     }
 }

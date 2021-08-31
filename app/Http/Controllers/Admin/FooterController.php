@@ -45,7 +45,7 @@ class FooterController extends Controller
             $footer->image = $filename;
         }
         $footer->update();
-        Alert::success('Data ' . $footer->title_website, 'Berhasil Diubah');
+        Alert::success('Data Berhasil Diubah');
         return redirect()->back();
     }
 }

@@ -58,7 +58,7 @@ class BannerController extends Controller
             $banner->image = $filename;
         }
         $banner->update();
-        Alert::success('Banner ' . $banner->title, 'Berhasil Diubah');
+        Alert::success('Banner Berhasil Diubah');
         return redirect()->back();
     }
 }
