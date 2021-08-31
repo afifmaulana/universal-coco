@@ -5,6 +5,7 @@
     <meta name="keywords" content="{!! $config['setting']['keywords'] !!}">
     <meta name="description" content="{!! $config['setting']['description'] !!}">
     <meta name="author" content="www.alfara-dev.com">
+    <meta name="google-site-verification" content="X3LB0MFBu4wnbZZrynQk22cOwW5AhaTYNp_64Zojj6E" />
     <title>{!! $config['setting']['title_website'] !!}</title>
     <link rel="stylesheet" href="{{ asset('assets/bootstrap/css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/styles/styles.css') }}">
