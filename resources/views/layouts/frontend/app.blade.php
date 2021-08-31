@@ -164,7 +164,7 @@
                 </div>
             </div>
 
-            <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                     {{-- <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
                         class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -508,7 +508,7 @@
                                     <div class="pt-2">
                                         <h5 class="mt-4 font-weight-medium mb-3 text--green">{!! $team->name !!}</h5>
                                         <h6 class="text-16 fw bold mb-3">{!! $team->position !!}</h6>
-                                        <p>{!! $team->position !!}</p>
+                                        <p>{!! $team->caption !!}</p>
                                         <ul class="list-inline">
                                             <li class="list-inline-item">
                                                 <a href="{!! $team->linkedin !!}" class="text-decoration-none d-block px-1">
