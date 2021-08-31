@@ -48,12 +48,12 @@ class BannerController extends Controller
         $banner->text_button = $request->text_button;
         $image = $request->file('image');
         if ($image != '') {
-            $img = (public_path('images/').$banner->image);
+            $img = (public_path('assets/images/').$banner->image);
             if(File::exists($img)) {
                 File::delete($img);
             }
             $filename = 'bg-hero.png';
-            $path = public_path('images');
+            $path = public_path('assets/images');
             $image->move($path, $filename);
             $banner->image = $filename;
         }

@@ -20,11 +20,14 @@ class FrontendController extends Controller
     {
         $banner = Banner::first();
         $aboutus = AboutUs::first();
-        $features = Feature::first();
+        $features = Feature::all();
         $products = Product::all();
         $teams = Team::all();
 
-        $titlesection = TitleSection::all();
+        $titleAboutUs = TitleSection::where('section_name', 'About Us')->get();
+        $titleFeature = TitleSection::where('section_name', 'Feature')->get();
+        $titleOurProduct = TitleSection::where('section_name', 'Our Product')->get();
+        $titleOurTeam = TitleSection::where('section_name', 'Our Teams')->get();
 
         return view('layouts.frontend.app', [
             'banner' => $banner,
@@ -32,7 +35,10 @@ class FrontendController extends Controller
             'features' => $features,
             'products' => $products,
             'teams' => $teams,
-            'titlesection' => $titlesection,
+            'titleAboutUs' => $titleAboutUs,
+            'titleFeature' => $titleFeature,
+            'titleOurProduct' => $titleOurProduct,
+            'titleOurTeam' => $titleOurTeam,
         ]);
     }
 }

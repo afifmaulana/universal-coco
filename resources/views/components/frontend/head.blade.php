@@ -2,6 +2,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="{!! $config['setting']['keywords'] !!}">
+    <meta name="description" content="{!! $config['setting']['description'] !!}">
+    <meta name="author" content="www.alfara-dev.com">
     <title>{!! $config['setting']['title_website'] !!}</title>
     <link rel="stylesheet" href="{{ asset('assets/bootstrap/css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/styles/styles.css') }}">

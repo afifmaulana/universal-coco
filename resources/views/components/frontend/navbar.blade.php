@@ -15,27 +15,27 @@
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item me-4">
                         <a class="nav-link"
-                            aria-current="page" href="#aboutus">About</a>
+                            aria-current="page" href="#aboutus">{!! $config['menuOne'][0]['menu_name'] !!}</a>
                     </li>
                     <li class="nav-item me-4">
                         <a class="nav-link"
-                            href="#journey">Journey</a>
+                            href="#journey">{!! $config['menuTwo'][0]['menu_name'] !!}</a>
                     </li>
                     <li class="nav-item me-4">
                         <a class="nav-link"
-                            href="#feature">Feature</a>
+                            href="#feature">{!! $config['menuThree'][0]['menu_name'] !!}</a>
                     </li>
                     <li class="nav-item me-4">
                         <a class="nav-link"
-                            href="#product">Product</a>
+                            href="#product">{!! $config['menuFour'][0]['menu_name'] !!}</a>
                     </li>
                     <li class="nav-item me-4">
                         <a class="nav-link"
-                            href="#team">Team</a>
+                            href="#team">{!! $config['menuFive'][0]['menu_name'] !!}</a>
                     </li>
                     <li class="nav-item me-4">
                         <a class="nav-link"
-                            href="#contact">Contact</a>
+                            href="#contact">{!! $config['menuSix'][0]['menu_name'] !!}</a>
                     </li>
                 </ul>
             </div>

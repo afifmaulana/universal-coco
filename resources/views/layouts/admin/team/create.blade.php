@@ -75,7 +75,7 @@
                                 </div>
                             </div>
                             <a href="{{ route('team.index') }}" class="btn btn-sm btn-secondary px-2">Back</a>
-							<button type="submit" class="btn btn-sm btn-primary">Simpan</button>
+							<button type="submit" class="btn btn-sm btn-primary">Save</button>
 						</div>
 					</div>
 				</form>

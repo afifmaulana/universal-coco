@@ -34,7 +34,9 @@ Route::get('/admin', function () {
     return view('layouts.admin.app');
 });
 
-Route::get('/', [FrontendController::class, 'index']);
+Route::middleware('visitor')->group(function () {
+    Route::get('/', [FrontendController::class, 'index']);
+});
 
 Route::prefix('admin')->group(function () {
     Route::get('/login', [LoginController::class, 'showLoginForm'])->name('admin.login');

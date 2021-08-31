@@ -31,7 +31,7 @@
                                 <p><b>{{ $errors->first('image') }}</b></p>
                             </span>
                             @endif
-                            <img src="{{asset('images/'.$data->image)}}" width="100" height="100" class="mb-2">
+                            <img src="{{asset('assets/images/'. $data->image)}}" width="100" height="100" class="mb-2">
                         </div>
                         <div class="row">
                             <div class="col-md-4">
@@ -51,7 +51,7 @@
                         </div>
                     </div>
                     <div class="card-footer">
-                        <button type="submit" class="btn btn-primary">Simpan</button>
+                        <button type="submit" class="btn btn-primary">Save</button>
                     </div>
                 </form>
             </div>

@@ -23,9 +23,9 @@
                     <ul class="dropdown-menu dropdown-user">
                         <li>
                             <div class="user-box">
-                                {{-- <div class="u-img">
+                                <div class="u-img">
                                     <img src="{{ asset('uploads/user/' . Auth::user()->image) }}" alt="user">
-                                </div> --}}
+                                </div>
                                 <div class="u-text">
                                     <h4>{{ Auth::user()->name }}</h4>
                                     <p class="text-muted">admin@gmail.com</p>

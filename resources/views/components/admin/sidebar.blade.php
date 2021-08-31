@@ -2,7 +2,7 @@
     <div class="scrollbar-inner sidebar-wrapper">
         <div class="user">
             <div class="photo">
-                <img src="{{ asset('assets/images/favicon.ico') }}">
+                <img src="{{ asset('uploads/user/'. Auth::user()->image) }}">
             </div>
             <div class="info">
                 <a class="___class_+?5___" data-toggle="collapse" href="#collapseExample" aria-expanded="true">

@@ -46,7 +46,7 @@
                                         <a href="javascript:void(0)" class="btn btn-xs btn-outline-danger modal-delete"
                                             data-id={{ $data->id }} data-toggle="modal" data-target="#deleteModal">
                                             <i class="la la-trash"></i>
-                                            | Hapus
+                                            | Delete
                                         </a>
                                     </td>
                                 </tr>

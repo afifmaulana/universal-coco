@@ -32,21 +32,21 @@ class AppServiceProvider extends ServiceProvider
         if(config('app.env') === 'production') {
             \URL::forceScheme('https');
         }
-            // $menuOne = Menu::where('id', 1)->get();
-            // $menuTwo = Menu::where('id', 2)->get();
-            // $menuThree = Menu::where('id', 3)->get();
-            // $menuFour = Menu::where('id', 4)->get();
-            // $menuFive = Menu::where('id', 5)->get();
-            // $menuSix = Menu::where('id', 6)->get();
+            $menuOne = Menu::where('id', 1)->get();
+            $menuTwo = Menu::where('id', 2)->get();
+            $menuThree = Menu::where('id', 3)->get();
+            $menuFour = Menu::where('id', 4)->get();
+            $menuFive = Menu::where('id', 5)->get();
+            $menuSix = Menu::where('id', 6)->get();
             $setting = Setting::first();
             $footer = Footer::first();
 
-            // $config['menuOne'] = $menuOne;
-            // $config['menuTwo'] = $menuTwo;
-            // $config['menuThree'] = $menuThree;
-            // $config['menuFour'] = $menuFour;
-            // $config['menuFive'] = $menuFive;
-            // $config['menuSix'] = $menuSix;
+            $config['menuOne'] = $menuOne;
+            $config['menuTwo'] = $menuTwo;
+            $config['menuThree'] = $menuThree;
+            $config['menuFour'] = $menuFour;
+            $config['menuFive'] = $menuFive;
+            $config['menuSix'] = $menuSix;
             $config['footer'] = $footer;
             $config['setting'] = $setting;
 

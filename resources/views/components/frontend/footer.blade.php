@@ -7,7 +7,7 @@
             </div>
             <div class="col-md-5" data-aos="fade-up">
                 <div class="col-sm-12 col-md-3 mb-3">
-                    <img src="{{ asset('uploads/footer/'. $config['footer']['logo']) }}" class="img-fluid my-auto h-auto w-100"
+                    <img src="{{ asset('uploads/footer/'. $config['footer']['image']) }}" class="img-fluid my-auto h-auto w-100"
                         alt="">
                 </div>
                 <div class="row">

@@ -41,7 +41,8 @@
                                     </span>
                                 @endif
 							</div>
-							<button type="submit" class="btn btn-sm btn-primary">Simpan</button>
+							<a href="{{ route('product.index') }}" class="btn btn-sm btn-secondary px-2">Back</a>
+							<button type="submit" class="btn btn-sm btn-primary px-2">Save</button>
 						</div>
 					</div>
 				</form>

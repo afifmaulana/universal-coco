@@ -58,7 +58,7 @@
                 <div class="d-block d-md-none">
                     <div class="row pt-5 mb-5">
                         <h2 class="text-black-35 text-center mb-5" data-aos="fade-up">
-                            About Us
+                            {!! $titleAboutUs[0]->section_title !!}
                         </h2>
                         <div class="col-sm-12 col-md-6 mb-3 mb-md-0 photos" data-aos="fade-up">
                             <a href="{{ asset('uploads/about-us/' . $aboutus->image) }}" data-lightbox="photos">
@@ -84,23 +84,28 @@
     <section class="px-md-5 py-5" id="feature" data-aos="fade-up">
         <div class="overflow-hidden">
             <div class="py-5">
-                <h2 class="text-center text-black-35">Our Key Features</h2>
+                <h2 class="text-center text-black-35">{!! $titleFeature[0]->section_title !!}</h2>
             </div>
             <div class="row pt-md-5 d-flex justify-content-center">
-                <div class="col-sm-12 col-md-6 text-center mb-5 px-5">
+                @foreach ($features as $feature)
+                    <div class="col-sm-12 col-md-6 text-center mb-5 px-5">
 
-                    <div class="py-3">
-                        <img src="{{ asset('assets/images/love.svg') }}" alt="">
+                        <div class="py-3">
+                            <a href="{{ asset('uploads/features/' . $feature->image) }}" data-lightbox="photos">
+                                <img src="{{ asset('uploads/features/' . $feature->image) }}" class="zoom"
+                                    alt="">
+                            </a>
+
+                        </div>
+                        <h5 class="text-sm text-uppercase fw-bold text--black py-3">
+                            {!! $feature->title !!}
+                        </h5>
+                        <p class="text-16">
+                            {!! $feature->description !!}
+                        </p>
                     </div>
-                    <h5 class="text-sm text-uppercase fw-bold text--black py-3">
-                        Integrity
-                    </h5>
-                    <p class="text-16">
-                        Integrity means telling the truth, keeping our word and treating others with fairness and
-                        respect. Integrity is one of our most cherished assets. It must not be compromised.
-                    </p>
-                </div>
-                <div class="col-sm-12 col-md-6 text-center mb-5 px-5">
+                @endforeach
+                {{-- <div class="col-sm-12 col-md-6 text-center mb-5 px-5">
 
                     <div class="py-3">
                         <img src="{{ asset('assets/images/quality.svg') }}" alt="">
@@ -113,9 +118,9 @@
                         delight customers, establishing a work environment , delivering financial results that meet
                         investor expectations.
                     </p>
-                </div>
+                </div> --}}
             </div>
-            <div class="row pt-md-5 d-flex justify-content-center">
+            {{-- <div class="row pt-md-5 d-flex justify-content-center">
                 <div class="col-sm-12 col-md-6 text-center mb-5 px-5">
 
                     <div class="py-3">
@@ -144,7 +149,7 @@
                         Indonesia project.
                     </p>
                 </div>
-            </div>
+            </div> --}}
         </div>
     </section>
 
@@ -155,215 +160,83 @@
         <div class="px-md-5 overflow-hidden">
             <div class="row">
                 <div class="pt-5 px-md-5">
-                    <h2 class="text--black text-30 px-5 fw-bold"> Our Product</h2>
+                    <h2 class="text--black text-30 px-5 fw-bold"> {!! $titleOurProduct[0]->section_title !!}</h2>
                 </div>
             </div>
+
             <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel">
                 <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                    {{-- <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
                         class="active" aria-current="true" aria-label="Slide 1"></button>
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
                         aria-label="Slide 2"></button>
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
+                        aria-label="Slide 3"></button> --}}
+                    @foreach ($products as $key => $product)
+                        <button type="button" class="{{ $loop->first ? 'active' : '' }}"
+                            data-bs-target="#carouselExampleIndicators" data-bs-slide-to="{{ $key }}"
+                            aria-label="Slide {{ $key + 1 }}"></button>
+                    @endforeach
                 </div>
                 <div class="carousel-inner">
-                    <div class="carousel-item active px-md-5">
-                        <div class="row">
-                            <div class="col-sm-12 col-md-6 p-5">
-                                <div class="px-md-5" data-aos="fade">
-                                    <p class="text-30 text--green fw-semibold">
-                                        Virgin Coconut Oil
-                                    </p>
-                                    <p class="text-16 text-md-xl lead" style="line-height: 160%;">
-                                        Virgin coconut oil is the oil extracted from coconuts without the
-                                        application of
-                                        heat.
-                                        It is rapidly gaining popularity throughout the world in comparison to
-                                        ordinary
-                                        coconut oil and for a good reason. There is, in fact, a substance called
-                                        virgin
-                                        coconut oil and it differs from regular coconut oil in significant ways.
-                                        These differences mainly lie with the source (more specifically, the
-                                        physical
-                                        form of the
-                                        source),
-                                        the method of extraction, and its subsequent benefits.
-                                    </p>
-                                    <div class="px-md-2 py-5">
-                                        <div class="d-none d-md-block">
-                                            <div class="row">
-                                                <div class="col-md-5 mb-2">
-                                                    <a href="" class="btn btn-outline-black">See Details</a>
-                                                </div>
-                                                <div class="col-md-6 mb-2">
-                                                    <a href="" class="btn btn-outline-black" rel="noreferrer">
-                                                        <span class="me-2">Contact Us </span>
-                                                        <div class="___class_+?73___">
-                                                            <img src="{{ asset('assets/images/whatsapp.svg') }}"
-                                                                alt="">
-                                                        </div>
-                                                    </a>
+                    @foreach ($products as $product)
+                        <div class="carousel-item {{ $loop->first ? 'active' : '' }} px-md-5">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-6 p-5">
+                                    <div class="px-md-5" data-aos="fade">
+                                        <p class="text-30 text--green fw-semibold">
+                                            {!! $product->title !!}
+                                        </p>
+                                        <p class="text-16 text-md-xl lead" style="line-height: 160%;">
+                                            {!! $product->description !!}
+                                        </p>
+                                        <div class="px-md-2 py-5">
+                                            <div class="d-none d-md-block">
+                                                <div class="row">
+                                                    <div class="col-md-5 mb-2">
+                                                        <a href="" class="btn btn-outline-black">See Details</a>
+                                                    </div>
+                                                    <div class="col-md-6 mb-2">
+                                                        <a href="" class="btn btn-outline-black" rel="noreferrer">
+                                                            <span class="me-2">Contact Us </span>
+                                                            <div class="___class_+?73___">
+                                                                <img src="{{ asset('assets/images/whatsapp.svg') }}"
+                                                                    alt="">
+                                                            </div>
+                                                        </a>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="d-block d-md-none">
-                                            <div class="row">
-                                                <div class="col-12 mb-2 px-5">
-                                                    <a href="" class="btn btn-outline-black">See Details</a>
-                                                </div>
-                                                <div class="col-12 mb-2 px-5">
-                                                    <a href="" class="btn btn-outline-black">
-                                                        <div class="me-1">Contact Us </div>
-                                                        <div class="___class_+?81___">
-                                                            <img src="{{ asset('assets/images/whatsapp.svg') }}"
-                                                                alt="">
-                                                        </div>
-                                                    </a>
+                                            <div class="d-block d-md-none">
+                                                <div class="row">
+                                                    <div class="col-12 mb-2 px-5">
+                                                        <a href="" class="btn btn-outline-black">See Details</a>
+                                                    </div>
+                                                    <div class="col-12 mb-2 px-5">
+                                                        <a href="" class="btn btn-outline-black">
+                                                            <div class="me-1">Contact Us </div>
+                                                            <div class="___class_+?81___">
+                                                                <img src="{{ asset('assets/images/whatsapp.svg') }}"
+                                                                    alt="">
+                                                            </div>
+                                                        </a>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-sm-12 col-md-6 p-5">
-                                <div class="px-md-5" data-aos="fade">
-                                    <div>
-                                        <img src="{{ asset('assets/images/coconut1.png') }}" class="img-center"
-                                            alt="">
+                                <div class="col-sm-12 col-md-6 p-5">
+                                    <div class="px-md-5" data-aos="fade">
+                                        <div>
+                                            <img src="{{ asset('uploads/products/' . $product->image) }}"
+                                                class="img-center" alt="">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="carousel-item px-md-5">
-                        <div class="row">
-                            <div class="col-sm-12 col-md-6 p-5">
-                                <div class="px-md-5" data-aos="fade">
-                                    <p class="text-30 text--green fw-semibold">
-                                        copra
-                                    </p>
-                                    <p class="text-16 text-md-xl lead" style="line-height: 160%;">
-                                        Copra is the dried flesh of coconuts. Every adult coconut tree
-                                        bears 50-75 nuts that can be harvested, split with machetes and
-                                        left to dry in the sun. The copra is then scraped out of the husk
-                                        and gets to dry further on racks. Finally, it is packed in jute bags
-                                        and transported to a processing facility.
-                                    </p>
-                                    <div class="px-md-2 py-5">
-                                        <div class="d-none d-md-block">
-                                            <div class="row">
-                                                <div class="col-md-5 mb-2">
-                                                    <a href="" class="btn btn-outline-black">See Details</a>
-                                                </div>
-                                                <div class="col-md-6 mb-2">
-                                                    <a href="" class="btn btn-outline-black" rel="noreferrer">
-                                                        <span class="me-2">Contact Us </span>
-                                                        <div class="___class_+?99___">
-                                                            <img src="{{ asset('assets/images/whatsapp.svg') }}"
-                                                                alt="">
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="d-block d-md-none">
-                                            <div class="row">
-                                                <div class="col-12 mb-2 px-5">
-                                                    <a href="" class="btn btn-outline-black">See Details</a>
-                                                </div>
-                                                <div class="col-12 mb-2 px-5">
-                                                    <a href="" class="btn btn-outline-black">
-                                                        <div class="me-1">Contact Us </div>
-                                                        <div class="___class_+?107___">
-                                                            <img src="{{ asset('assets/images/whatsapp.svg') }}"
-                                                                alt="">
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-12 col-md-6 p-5">
-                                <div class="px-md-5" data-aos="fade">
-                                    <div>
-                                        <img src="{{ asset('assets/images/coconut1.png') }}" class="img-center"
-                                            alt="">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item px-md-5">
-                        <div class="row">
-                            <div class="col-sm-12 col-md-6 p-5">
-                                <div class="px-md-5" data-aos="fade">
-                                    <p class="text-30 text--green fw-semibold">
-                                        Virgin Coconut Oil
-                                    </p>
-                                    <p class="text-16 text-md-xl lead" style="line-height: 160%;">
-                                        Virgin coconut oil is the oil extracted from coconuts without the
-                                        application of
-                                        heat.
-                                        It is rapidly gaining popularity throughout the world in comparison to
-                                        ordinary
-                                        coconut oil and for a good reason. There is, in fact, a substance called
-                                        virgin
-                                        coconut oil and it differs from regular coconut oil in significant ways.
-                                        These differences mainly lie with the source (more specifically, the
-                                        physical
-                                        form of the
-                                        source),
-                                        the method of extraction, and its subsequent benefits.
-                                    </p>
-                                    <div class="px-md-2 py-5">
-                                        <div class="d-none d-md-block">
-                                            <div class="row">
-                                                <div class="col-md-5 mb-2">
-                                                    <a href="" class="btn btn-outline-black">See Details</a>
-                                                </div>
-                                                <div class="col-md-6 mb-2">
-                                                    <a href="" class="btn btn-outline-black" rel="noreferrer">
-                                                        <span class="me-2">Contact Us </span>
-                                                        <div class="___class_+?125___">
-                                                            <img src="{{ asset('assets/images/whatsapp.svg') }}"
-                                                                alt="">
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="d-block d-md-none">
-                                            <div class="row">
-                                                <div class="col-12 mb-2 px-5">
-                                                    <a href="" class="btn btn-outline-black">See Details</a>
-                                                </div>
-                                                <div class="col-12 mb-2 px-5">
-                                                    <a href="" class="btn btn-outline-black">
-                                                        <div class="me-1">Contact Us </div>
-                                                        <div class="___class_+?133___">
-                                                            <img src="{{ asset('assets/images/whatsapp.svg') }}"
-                                                                alt="">
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-12 col-md-6 p-5">
-                                <div class="px-md-5" data-aos="fade">
-                                    <div>
-                                        <img src="{{ asset('assets/images/coconut-peat-blocks.777f5293.png') }}"
-                                            class="img-center" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    @endforeach
                     <div class="px-md-5">
                         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
                             data-bs-slide="prev">
@@ -378,6 +251,7 @@
                     </div>
                 </div>
             </div>
+
         </div>
         {{-- </div> --}}
         {{-- <div class="d-block d-md-none">
@@ -616,45 +490,48 @@
             <div class="container">
                 <div class="row justify-content-center mb-4">
                     <div class="col-md-7 text-center mb-4">
-                        <h3 class="mb-3 text-black-35 text--black fw-bold">Our Teams</h3>
+                        <h3 class="mb-3 text-black-35 text--black fw-bold">{!! $titleOurTeam[0]->section_title !!}</h3>
                     </div>
                 </div>
                 <div class="row px-3">
 
                     <!-- column  -->
-                    <div class="col-lg-4 mb-4">
-                        <!-- Row -->
-                        <div class="row">
-                            <div class="col-md-12">
-                                <img src="{{ asset('assets/images/julio.png') }}" alt="wrapkit"
-                                    class="img-team-center img-fluid rounded-circle zoom" />
-                            </div>
-                            <div class="col-md-12 text-center">
-                                <div class="pt-2">
-                                    <h5 class="mt-4 font-weight-medium mb-3 text--green">Julio</h5>
-                                    <h6 class="text-16 fw bold mb-3">Founder</h6>
-                                    <p>Our faith is the substance of our future. There is no big success without big
-                                        sacrifice.</p>
-                                    <ul class="list-inline">
-                                        <li class="list-inline-item">
-                                            <a href="#" class="text-decoration-none d-block px-1">
-                                                <img src="{{ asset('assets/images/linkedin-black.svg') }}" alt="">
-                                            </a>
-                                        </li>
-                                        <li class="list-inline-item">
-                                            <a href="#" class="text-decoration-none d-block px-1">
-                                                <img src="{{ asset('assets/images/instagram-black.svg') }}" alt="">
-                                            </a>
-                                        </li>
-                                    </ul>
+                    @foreach ($teams as $team)
+                        <div class="col-lg-4 mb-4">
+                            <!-- Row -->
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <img src="{{ asset('uploads/teams/'. $team->image) }}" alt="wrapkit"
+                                        class="img-team-center img-fluid rounded-circle zoom" />
+                                </div>
+                                <div class="col-md-12 text-center">
+                                    <div class="pt-2">
+                                        <h5 class="mt-4 font-weight-medium mb-3 text--green">{!! $team->name !!}</h5>
+                                        <h6 class="text-16 fw bold mb-3">{!! $team->position !!}</h6>
+                                        <p>{!! $team->position !!}</p>
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item">
+                                                <a href="{!! $team->linkedin !!}" class="text-decoration-none d-block px-1">
+                                                    <img src="{{ asset('assets/images/linkedin-black.svg') }}"
+                                                        alt="">
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a href="{!! $team->instagram !!}" class="text-decoration-none d-block px-1">
+                                                    <img src="{{ asset('assets/images/instagram-black.svg') }}"
+                                                        alt="">
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
+                            <!-- Row -->
                         </div>
-                        <!-- Row -->
-                    </div>
+                    @endforeach
                     <!-- column  -->
                     <!-- column  -->
-                    <div class="col-lg-4 mb-4">
+                    {{-- <div class="col-lg-4 mb-4">
                         <!-- Row -->
                         <div class="row">
                             <div class="col-md-12">
@@ -715,7 +592,7 @@
                             </div>
                         </div>
                         <!-- Row -->
-                    </div>
+                    </div> --}}
                 </div>
             </div>
         </div>
