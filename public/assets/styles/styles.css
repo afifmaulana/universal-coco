@@ -17,7 +17,7 @@ html {
 /* Handle */
 ::-webkit-scrollbar-thumb {
     border-radius: 3px;
-    background: linear-gradient(to bottom, #46ad1e, #65e80d);
+    background: linear-gradient(to bottom, #1150a1, #2181ff);
 }
 
 * {
@@ -132,7 +132,7 @@ html {
 }
 
 .navbar.active .nav-link {
-    color:#04800e;
+    color:#1150a1;
 }
 
 .navbar.active .nav-link:hover,
@@ -253,11 +253,6 @@ html {
 .btn--outline-white:hover {
     color: #ad1e23;
     background: white;
-}
-
-.
-    font-weight: 700;
-    font-size: 22px;
 }
 
 .card-subtitle {
@@ -955,7 +950,7 @@ html {
     }
 
 .text--green {
-    color: #338e4f;
+    color: #1150a1;
 }
 .team4 {
     font-family: "Montserrat", sans-serif;
@@ -988,11 +983,11 @@ html {
   }
 .footer-black {
     padding-top: 100px;
-    background-color: #373737;
+    background-color: #0b2649;
     color: #fff;
 }
 .copyright-style {
-    background-color: #282828;
+    background-color: #093063;
     padding: 10px 100px;
 }
 .btn-outline-black {
@@ -1006,10 +1001,10 @@ html {
 }
 .btn-outline-black:hover {
     padding: 10px 20px;
-    background-color: #13c94a;
+    background-color: #1150a1;
     border-radius: 6px;
     color: #FFFFFF;
-    border: 1px solid #13c94a;
+    border: 1px solid #1150a1;
     margin-right: 20px;
     display: flex;
     align-items: center;

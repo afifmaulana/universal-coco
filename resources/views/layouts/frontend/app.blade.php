@@ -40,7 +40,7 @@
                         <div class="col-sm-12 col-md-6 my-auto" data-aos="fade-up">
 
                             <h2 class="text-black-35 mb-3">
-                                About Us
+                                {!! $titleAboutUs[0]->section_title !!}
                             </h2>
                             <p class="text-18">{!! $aboutus->title !!}</p>
                             <p class="subtitle">

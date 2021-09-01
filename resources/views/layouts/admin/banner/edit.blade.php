@@ -18,7 +18,7 @@
                                 required placeholder="Enter Title Banner" value="{{ old('title') ?? ($data ? $data->title : '') }}">
                         </div>
                         <div class="form-group">
-                            <label for="subtitle">Title Banner</label>
+                            <label for="subtitle">Subtitle Banner</label>
                             <input type="text" class="form-control" id="subtitle" name="subtitle"
                                 required placeholder="Enter Subtitle Banner" value="{{ old('subtitle') ?? ($data ? $data->subtitle : '') }}">
                         </div>
