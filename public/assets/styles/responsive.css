@@ -39,7 +39,7 @@
 /* mobile or only mobile */
 @media (max-width: 600px) and (max-width: 767px) {
     .navbar-light .navbar-nav .nav-link {
-        color: #338e4f;
+        color: #1150a1;
     }
     .photo-gallery h2 {
         margin-bottom: 25px;
@@ -311,12 +311,12 @@
     }
     .title-h6 {
         font-weight: 500;
-        font-size: 24px;
+        font-size: 18px;
         color: #ffffff;
     }
     .title-h2 {
         font-weight: 600;
-        font-size: 38px;
+        font-size: 28px;
         color: #ffffff;
     }
 }
