@@ -93,7 +93,7 @@
 
             <li class="nav-item {{ request()->routeIs(['button-our-product.edit']) ? 'active' : '' }}">
                 <a href="{{ route('button-our-product.edit') }}">
-                    <i class="la la-sitemap" style="color: #1150a1"></i>
+                    <i class="la la-link" style="color: #1150a1"></i>
                     <p>Button Our Product</p>
                 </a>
             </li>
