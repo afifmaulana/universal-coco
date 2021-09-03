@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Hash;
 use RealRashid\SweetAlert\Facades\Alert;
@@ -57,6 +58,7 @@ class ProfileController extends Controller
             $user->image = $filename;
         }
         $user->update();
+        Artisan::call('cache:clear');
         Alert::success('Profile ' . $user->name, 'Berhasil Diubah');
         return redirect()->back();
     }

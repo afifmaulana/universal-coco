@@ -64,20 +64,20 @@ html {
 .section-title {
     font-weight: 600;
     font-size: 20px;
-    color: #ad1e23;
+    color: #1150a1;
 }
 
 .title {
     font-family: "Nunito Sans", sans-serif;
     font-weight: 800;
-    color: #ad1e23;
+    color: #1150a1;
 }
 
 .title-section-about-us {
     font-weight: 800;
     font-size: 35px;
     line-height: 143.9%;
-    color: #AD1E23;
+    color: #1150a1;
 }
 
 .text-30 {
@@ -107,7 +107,7 @@ html {
 
 .navbar {
     transition: all 0.4s;
-    /* background: #ad1e23;
+    /* background: #1150a1;
     opacity: 15%; */
 }
 
@@ -202,39 +202,39 @@ html {
 
 .btn--primary {
     color: white;
-    background: #ad1e23;
+    background: #1150a1;
     letter-spacing: 1px;
     line-height: 15px;
     text-align: center;
     border-radius: 40px;
-    background: #ad1e23;
+    background: #1150a1;
     transition: all 0.3s ease 0s;
     padding-left: 20px;
     padding-right: 20px;
-    border: solid 1.5px #ad1e23;
+    border: solid 1.5px #1150a1;
 }
 
 .btn--primary:hover {
-    color: #ad1e23;
+    color: #1150a1;
     background: transparent;
 }
 
 .btn--outline-primary {
-    color: #ad1e23;
+    color: #1150a1;
     background: transparent;
     letter-spacing: 1px;
     line-height: 15px;
     text-align: center;
     border-radius: 40px;
     transition: all 0.3s ease 0s;
-    border: solid 1.5px #ad1e23;
+    border: solid 1.5px #1150a1;
     padding-left: 20px;
     padding-right: 20px;
 }
 
 .btn--outline-primary:hover {
     color: #fff;
-    background: #ad1e23;
+    background: #1150a1;
 }
 
 .btn--outline-white {
@@ -251,7 +251,7 @@ html {
 }
 
 .btn--outline-white:hover {
-    color: #ad1e23;
+    color: #1150a1;
     background: white;
 }
 
@@ -283,8 +283,8 @@ html {
     background: linear-gradient(
         90deg,
         transparent 25%,
-        #ad1e23 25%,
-        #ad1e23 75%,
+        #1150a1 25%,
+        #1150a1 75%,
         transparent 75%
     );
     background-size: 100% 3px;
@@ -303,7 +303,7 @@ html {
 
 .bg-team {
     background-image: url("../images/home/team.png"),
-        linear-gradient(180deg, #ad1e23 0%, #e8410d 100%);
+        linear-gradient(180deg, #1150a1 0%, #e8410d 100%);
 }
 
 .section-join {
@@ -314,7 +314,7 @@ html {
     background-size: cover;
     background-blend-mode: overlay;
     background-image: url("../images/join-us/bg-join.png"),
-        linear-gradient(to right, rgba(232, 65, 13, 0), #ad1e23 100%);
+        linear-gradient(to right, rgba(232, 65, 13, 0), #1150a1 100%);
 }
 
 .sm-section-join {
@@ -323,15 +323,15 @@ html {
     background-size: cover;
     background-blend-mode: overlay;
     background-image: url("../images/join-us/bg-join.png"),
-        linear-gradient(to bottom, rgba(232, 65, 13, 0), #ad1e23 100%);
+        linear-gradient(to bottom, rgba(232, 65, 13, 0), #1150a1 100%);
 }
 
 .bg-image-join {
     background-image: url("../images/home/team.png"),
-        linear-gradient(180deg, #ad1e23 0%, #e8410d 100%);
+        linear-gradient(180deg, #1150a1 0%, #e8410d 100%);
 }
 .bg-gradient {
-    background-image: linear-gradient(180deg, #ad1e23 0%, #e8410d 100%);
+    background-image: linear-gradient(180deg, #1150a1 0%, #e8410d 100%);
 }
 .title-slide {
     color: white;
@@ -420,14 +420,14 @@ html {
 }
 
 .text-read-more:hover {
-    color: #ad1e23;
+    color: #1150a1;
 }
 .title-detail {
     font-weight: bold;
     font-size: 40px;
     line-height: 143.9%;
     text-align: center;
-    color: #AD1E23;
+    color: #1150a1;
 }
 
 .text-detail-blog {
@@ -455,11 +455,11 @@ html {
 
 .bg-collab {
     background-image: url("../images/home/collaboration.png"),
-        linear-gradient(180deg, #ad1e23 0%, #e8410d 100%);
+        linear-gradient(180deg, #1150a1 0%, #e8410d 100%);
 }
 
 .btn-white-primary {
-    color: #ad1e23;
+    color: #1150a1;
     background: #fff;
     letter-spacing: 1px;
     line-height: 15px;
@@ -474,8 +474,8 @@ html {
 
 .btn-white-primary:hover {
     color: #fff;
-    background: #ad1e23;
-    border: solid 1.5px #ad1e23;
+    background: #1150a1;
+    border: solid 1.5px #1150a1;
 }
 
 .btn-hero {
@@ -492,7 +492,7 @@ html {
 }
 
 .btn-hero:hover {
-    color: #ad1e23;
+    color: #1150a1;
     background: white;
 }
 
@@ -505,7 +505,7 @@ html {
 }
 
 .line-primary {
-    border: 1px solid #ad1e23;
+    border: 1px solid #1150a1;
 }
 
 .line-gray {
@@ -513,7 +513,7 @@ html {
 }
 
 .title-primary-50 {
-    color: #ad1e23;
+    color: #1150a1;
     font-weight: 800;
     font-size: 50px;
     margin: 0 200px;
@@ -522,11 +522,11 @@ html {
     font-weight: 800;
     font-size: 65px;
     line-height: 143.9%;
-    color: #AD1E23;
+    color: #1150a1;
 }
 
 .title-primary-80 {
-    color: #ad1e23;
+    color: #1150a1;
     font-weight: 800;
     font-size: 80px;
     margin: 0 200px;
@@ -537,7 +537,7 @@ html {
 }
 
 .number-primary {
-    color: #ad1e23;
+    color: #1150a1;
     font-size: 80px;
     font-weight: 800;
 }
@@ -610,7 +610,7 @@ html {
 .contact-title {
     font-size: 50px;
     font-weight: 800;
-    color: #ad1e23;
+    color: #1150a1;
 }
 
 .ml-n15 {
@@ -652,24 +652,39 @@ html {
     font-weight: 600;
 }
 
-.btn-social-media-primary {
+.btn-social-media-green {
     color: white;
-    background: #ad1e23;
+    background: #338e4f;
     letter-spacing: 2px;
     line-height: 15px;
     text-align: center;
     transition: all 0.3s ease 0s;
     padding: 10px;
-    border: solid 1.5px #ad1e23;
+    border: solid 1.5px #338e4f;
+}
+
+.btn-social-media-green:hover {
+    color: #338e4f;
+    background: transparent;
+}
+.btn-social-media-primary {
+    color: white;
+    background: #1150a1;
+    letter-spacing: 2px;
+    line-height: 15px;
+    text-align: center;
+    transition: all 0.3s ease 0s;
+    padding: 10px;
+    border: solid 1.5px #1150a1;
 }
 
 .btn-social-media-primary:hover {
-    color: #ad1e23;
+    color: #1150a1;
     background: transparent;
 }
 
 .btn-social-media-white {
-    color: #ad1e23;
+    color: #1150a1;
     background: white;
     letter-spacing: 1px;
     line-height: 10px;
@@ -681,8 +696,8 @@ html {
 
 .btn-social-media-white:hover {
     color: white;
-    background: #ad1e23;
-    border: solid 1.5px #ad1e23;
+    background: #1150a1;
+    border: solid 1.5px #1150a1;
 }
 
 .arrow-long-right {
@@ -862,7 +877,7 @@ html {
     font-weight: 600;
     font-size: 20px;
     line-height: 130%;
-    color: #AD1E23
+    color: #1150a1
 }
 .text-title-product {
     font-weight: bold;

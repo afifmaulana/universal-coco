@@ -6,6 +6,8 @@ use App\Http\Controllers\Controller;
 use App\Models\Product;
 use Illuminate\Http\Request;
 use Alert;
+use Illuminate\Support\Facades\Artisan;
+use Illuminate\Support\Str;
 use Illuminate\Support\Facades\File;
 
 class ProductController extends Controller
@@ -49,7 +51,8 @@ class ProductController extends Controller
         $image->move($path, $filename);
 
         $product = new product();
-        $product->title = $request->title;
+        $title = $product->title = $request->title;
+        $product->slug = Str::slug($title);
         $product->description = $request->description;
         $product->image = $filename;
         $product->save();
@@ -79,7 +82,8 @@ class ProductController extends Controller
         $this->validate($request, $rules, $message);
 
         $product = Product::where('id', $id)->first();
-        $product->title = $request->title;
+        $title = $product->title = $request->title;
+        $product->slug = Str::slug($title);
         $product->description = $request->description;
         $image = $request->file('image');
         if ($image != '') {
@@ -93,6 +97,7 @@ class ProductController extends Controller
             $product->image = $filename;
         }
         $product->update();
+        Artisan::call('cache:clear');
         Alert::success('Data ' . $product->title, 'Berhasil Diubah');
         return redirect()->route('product.index');
     }

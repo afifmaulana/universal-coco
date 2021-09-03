@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Models\AboutUs;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\File;
 use RealRashid\SweetAlert\Facades\Alert;
 
@@ -54,6 +55,7 @@ class AboutUsController extends Controller
             $aboutus->image = $filename;
         }
         $aboutus->update();
+        Artisan::call('cache:clear');
         Alert::success('Data Berhasil Diubah');
         return redirect()->back();
     }

@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Models\Setting;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\File;
 use RealRashid\SweetAlert\Facades\Alert;
 
@@ -74,6 +75,7 @@ class SettingController extends Controller
             $setting->logo = $filename;
         }
         $setting->update();
+        Artisan::call('cache:clear');
         Alert::success('Data ' . $setting->title_website, 'Berhasil Diubah');
         return redirect()->back();
     }

@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Models\Banner;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\File;
 use RealRashid\SweetAlert\Facades\Alert;
 
@@ -58,6 +59,7 @@ class BannerController extends Controller
             $banner->image = $filename;
         }
         $banner->update();
+        Artisan::call('cache:clear');
         Alert::success('Banner Berhasil Diubah');
         return redirect()->back();
     }

@@ -194,11 +194,11 @@
                                             <div class="d-none d-md-block">
                                                 <div class="row">
                                                     <div class="col-md-5 mb-2">
-                                                        <a href="" class="btn btn-outline-black">See Details</a>
+                                                        <a href="{{ route('product.detail', $product->slug) }}" target="_blank" class="btn btn-outline-black">{!! $button->text_button_detail !!}</a>
                                                     </div>
                                                     <div class="col-md-6 mb-2">
-                                                        <a href="" class="btn btn-outline-black" rel="noreferrer">
-                                                            <span class="me-2">Contact Us </span>
+                                                        <a href="{!! $button->url_button_wa !!}" target="_blank" class="btn btn-outline-black" rel="noreferrer">
+                                                            <span class="me-2">{!! $button->text_button_wa !!}</span>
                                                             <div class="___class_+?73___">
                                                                 <img src="{{ asset('assets/images/whatsapp.svg') }}"
                                                                     alt="">
@@ -210,11 +210,11 @@
                                             <div class="d-block d-md-none">
                                                 <div class="row">
                                                     <div class="col-12 mb-2 px-5">
-                                                        <a href="" class="btn btn-outline-black">See Details</a>
+                                                        <a href="{{ route('product.detail', $product->slug) }}" target="_blank" class="btn btn-outline-black">{!! $button->text_button_detail !!}</a>
                                                     </div>
                                                     <div class="col-12 mb-2 px-5">
-                                                        <a href="" class="btn btn-outline-black">
-                                                            <div class="me-1">Contact Us </div>
+                                                        <a href="{!! $button->url_button_wa !!}" target="_blank" class="btn btn-outline-black">
+                                                            <div class="me-1">{!! $button->text_button_wa !!}</div>
                                                             <div class="___class_+?81___">
                                                                 <img src="{{ asset('assets/images/whatsapp.svg') }}"
                                                                     alt="">

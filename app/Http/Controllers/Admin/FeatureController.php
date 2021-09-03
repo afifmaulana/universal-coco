@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Alert;
 use App\Models\Feature;
+use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\File;
 
 class FeatureController extends Controller
@@ -93,6 +94,7 @@ class FeatureController extends Controller
             $feature->image = $filename;
         }
         $feature->update();
+        Artisan::call('cache:clear');
         Alert::success('Data ' . $feature->title, 'Berhasil Diubah');
         return redirect()->route('feature.index');
     }

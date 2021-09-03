@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Admin\AboutUsController;
 use App\Http\Controllers\Admin\BannerController;
+use App\Http\Controllers\Admin\ButtonOurProductController;
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\FeatureController;
 use App\Http\Controllers\Admin\FooterController;
@@ -36,6 +37,7 @@ Route::get('/admin', function () {
 
 Route::middleware('visitor')->group(function () {
     Route::get('/', [FrontendController::class, 'index']);
+    Route::get('/product/{slug}', [FrontendController::class, 'detail'])->name('product.detail');
 });
 
 Route::prefix('admin')->group(function () {
@@ -75,6 +77,11 @@ Route::prefix('admin')->group(function () {
         Route::get('/{id}/edit', [TeamController::class, 'edit'])->name('team.edit');
         Route::patch('/{id}/edit', [TeamController::class, 'update'])->name('team.update');
         Route::get('/delete/{id}', [TeamController::class, 'delete'])->name('team.delete');
+    });
+
+    Route::prefix('button')->group(function () {
+        Route::get('/edit', [ButtonOurProductController::class, 'edit'])->name('button-our-product.edit');
+        Route::patch('/edit', [ButtonOurProductController::class, 'update'])->name('button-our-product.update');
     });
 
     Route::prefix('setting')->group(function () {

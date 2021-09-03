@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Alert;
 use App\Models\Team;
+use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\File;
 
 class TeamController extends Controller
@@ -105,6 +106,7 @@ class TeamController extends Controller
             $team->image = $filename;
         }
         $team->update();
+        Artisan::call('cache:clear');
         Alert::success('Data ' . $team->name, 'Berhasil Diubah');
         return redirect()->route('team.index');
     }

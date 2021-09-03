@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Frontend;
 use App\Http\Controllers\Controller;
 use App\Models\AboutUs;
 use App\Models\Banner;
+use App\Models\ButtonOurProduct;
 use App\Models\Feature;
 use App\Models\Footer;
 use App\Models\Menu;
@@ -23,6 +24,7 @@ class FrontendController extends Controller
         $features = Feature::all();
         $products = Product::all();
         $teams = Team::all();
+        $button = ButtonOurProduct::first();
 
         $titleAboutUs = TitleSection::where('section_name', 'About Us')->get();
         $titleFeature = TitleSection::where('section_name', 'Feature')->get();
@@ -35,10 +37,19 @@ class FrontendController extends Controller
             'features' => $features,
             'products' => $products,
             'teams' => $teams,
+            'button' => $button,
             'titleAboutUs' => $titleAboutUs,
             'titleFeature' => $titleFeature,
             'titleOurProduct' => $titleOurProduct,
             'titleOurTeam' => $titleOurTeam,
+        ]);
+    }
+
+    public function detail($slug)
+    {
+        $product = Product::where('slug', $slug)->first();
+        return view('layouts.frontend.detail-product', [
+            'product' => $product,
         ]);
     }
 }
